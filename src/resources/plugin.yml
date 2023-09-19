@@ -1,0 +1,64 @@
+name: RewardsLite
+version: '${project.version}'
+main: com.backtobedrock.rewardslite.Rewardslite
+api-version: 1.13
+prefix: RewardsLite
+softdepend: [ Essentials, PlaceholderAPI ]
+authors: [ Nathan ]
+description: Enhance your server with fully configurable playtime rewards
+website: backtobedrock.com
+libraries:
+  - com.zaxxer:HikariCP:5.0.1
+commands:
+  playtime:
+    description: Check your current playtime and AFK time
+    aliases:
+      - pt
+    permission: rewardslite.playtime
+    usage: /<command> [player]
+  rewards:
+    description: View your available rewards
+    aliases:
+      - rwds
+    permission: rewardslite.rewards
+    usage: /<command> [player]
+  rewardslite:
+    description: General RewardsLite commands
+    permission: rewardslite.help
+    aliases:
+      - rl
+      - reli
+    usage: /<command> (convert | give | help | reload | reset)
+  playtop:
+    description: View the top leaderboards for playtime
+    permission: rewardslite.playtop
+    usage: /<command> [includeAFKTime]
+  afktop:
+    description: View the top leaderboards for AFK time
+    permission: rewardslite.afktop
+    usage: /<command>
+permissions:
+  rewardslite.convert:
+    default: op
+  rewardslite.givereward:
+    default: op
+  rewardslite.help:
+    default: op
+  rewardslite.playtime:
+    default: op
+  rewardslite.playtime.other:
+    default: op
+  rewardslite.reload:
+    default: op
+  rewardslite.reset:
+    default: op
+  rewardslite.reward.*:
+    default: op
+  rewardslite.rewards:
+    default: op
+  rewardslite.rewards.other:
+    default: op
+  rewardslite.playtop:
+    default: op
+  rewardslite.afktop:
+    default: op
