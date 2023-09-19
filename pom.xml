@@ -73,10 +73,10 @@
 
     <repositories>
         <repository>
-        <repository>
             <id>maven-central</id>
             <url>https://papermc.io/repo/repository/maven-releases/</url>
         </repository>
+        <repository>
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
